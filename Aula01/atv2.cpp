@@ -14,7 +14,7 @@ if(l1 >=1 && l1 <= 100000000 && l2 >=1 && l2 <=100000000){
     std::cout <<"Perimetro do retangulo:" << perimetro << std::endl;
 
 }else{
-    std::cout << "Erro: os valores devem estar entre 1 e 10^9." << std::endl;
+    std::cout << "Passou do limite! Não pode ser mais de 1 bilhão!" << std::endl;
 }
 
     return 0;
