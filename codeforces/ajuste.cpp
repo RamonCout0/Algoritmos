@@ -1,13 +1,10 @@
 #include <iostream>
 
 int main(){
+    float X, N; 
+    std::cin >> N >> X;
 
-    int n; 
-    double x;
-
-    std::cin >> x >>; 
     
-
+    int ajuste = X * 100 / N;
+    std::cout << ajuste << std::endl;
 }
-
-
