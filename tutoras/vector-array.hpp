@@ -20,7 +20,9 @@ public:
     unsigned int size() {
         return this->size_;
     }                           // Retorna a quantidade de elementos armazenados
-    unsigned int capacity() {}                       // Retorna o espaço reservado para armazenar os elementos
+    unsigned int capacity() {
+        return this->capacity_;
+    }                       // Retorna o espaço reservado para armazenar os elementos
     double percent_occupied() {}                     // Retorna um valor entre 0.0 a 1.0 com o percentual da
                                                      // memória usada.
     bool insert_at(unsigned int index, int value) {} // Insere elemento no índice index
@@ -33,6 +35,7 @@ public:
                                                      // −1 se índice inválido
     void clear() {}                                  // Remove todos os elementos, deixando o vetor no estado inicial
     void push_back(int value) {
+        if(this->size_ == this->capacity_)
         data[this->size_] = value;
         this->size_ = this->size_ + 1;
         //size_++;

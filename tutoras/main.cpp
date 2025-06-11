@@ -25,18 +25,27 @@ void teste(int inicio, int fim){
 
 int main(){
     vector_array v1;
-    v1.push_back(10);
+   /* v1.push_back(10);
     std::cout << " v1 tem " << v1.size() <<" elementos." << std::endl;
    
     v1.push_back(20);
     v1.push_back(30);
     std::cout << " v1 tem " << v1.size() <<" elementos." << std::endl;
     teste(5, 10);
+*/
 
+int n;
+std::cin >> n;
+for(int i = 0; i < n; i++){
+    int x;
+    std:: cin >>x;
+    v1.push_back(x);
+}
+std::cout << "v1 ( size = " << v1.size() << " ,capacity = "  << v1.capacity() << " ): ";
     for(int i = 0; i < v1.size(); i++){
         std::cout << v1.get_at(i) << " ";
-        std::cout << std::endl;
     }
+
     return 0;
 
 }
